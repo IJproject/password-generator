@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 92%;
+    margin: 40px auto;
+}
+
+header h1 {
+    text-align: center;
+    margin: 12px auto;
+}
+
+header p, footer p {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#option, #display {
+    margin: 60px auto;
+    padding: 20px;
+    border: double 2px slategray;
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    margin-left: 4px;
+    font-size: 0.8rem;
+}
+
+#option > div {
+    margin: 20px auto;
+}
+
+#content, #length, #kind { 
+    width: 100%;
+}
+
+input, select {
+    padding: 4px;
+}
+
+#genarate {
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+    font-size: 1rem;
+}
+
+#display {
+    font-size: 1.2rem;
+}    
+
+#display p {
+    border-bottom: dotted 2px slategray;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+#re-generate, #copy {
+    display: block;
+    margin: 0 20px;
+    padding: 4px;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}

@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link href="app.css" rel="stylesheet">
     <script src="./dist/app.js"></script>
 </head>
 <body>
-    <h1>パスワードジェネレーター</h1>
+    <div id="container">
+        <header>
+            <h1>パスワードジェネレーター</h1>
+            <p>パスワードの作成でお困りのあなたに、最高のパスワードをお届け致します。<br>
+               セキュリティ面は保証できませんので、もし有事の事態になっても責任は取れません。<br>
+               しかし、作成者にコンタクトを取ってくだされば、「ドンマイ(笑)」と一言プレゼント致します。</p>
+        </header>
+        <div id="option">
+            <h2>オプション</h2>
+            <div>
+                <label for="content">含めたい文字列<span>(複数指定する場合は、空白かコンマで区切ってください。)</span></label>
+                <input id="content" />
+            </div>
+            <div>
+                <label for="length">長さ<span>(0で任意の長さ、最大100文字)</span></label>
+                <input id="length" type="number" min="0" max="100" inputmode="numeric" pattern="\d*"/>
+            </div>
+            <div>
+                <label>文字の種類</label>
+                <select id="kind">
+                    <option value="">無制限</option>
+                    <option value="number">数字のみ</option>
+                    <option value="string">文字のみ</option>
+                </select>
+            </div>
+            <button id="genarate">作成</button>
+        </div>
+        <div id="display">
+            <h2>生成パスワード</h2>
+            <p></p>
+            <div class="flex">
+                <button id="copy">コピー</button>
+                <button id="re-generate">再作成</button>
+            </div>
+            
+        </div>
+        <footer>
+            <p>生涯のパートナーになり得るような、相棒に出会えましたか？<br>
+               みなさんが良いパスワードライフを送れることを心より祈っています。</p>
+        </footer>
+    </div>
 </body>
 </html>
